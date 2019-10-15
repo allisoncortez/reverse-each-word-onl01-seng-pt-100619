@@ -11,7 +11,7 @@ def reverse_each_word(sentence)
   #we need to know the size of our sentence
   sentence.size.times { reversed_array << split_string.unshift }
   
-return reversed_array.join
+return reversed_array.join(' ')
 end
 
 # def reverse_string(string)
