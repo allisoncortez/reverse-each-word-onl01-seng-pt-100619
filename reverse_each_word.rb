@@ -9,7 +9,7 @@ def reverse_each_word(sentence)
   reversed_array = []
   
   #we need to know the size of our sentence
-  sentence.size.times { reversed_array << split_string.pop }
+  sentence.size.times { reversed_array << sentence.pop }
   
 return reversed_array.join(' ')
 end
