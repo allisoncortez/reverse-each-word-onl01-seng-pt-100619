@@ -17,6 +17,7 @@
 
 def reverse_each_word(string)
  string = string.split(' ')
+ string_length = self.length - 1
  reversed_string = []
  
  string.collect do |word|
