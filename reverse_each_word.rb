@@ -15,20 +15,15 @@
 # return reversed_array.join(' ')
 # end
 
-# def reverse_string(string)
-#   split_string = string.split("")
-#   reversed = []
-#   string.size.times { reversed << split_string.pop }
-#   reversed.join
-# end
+
 
 def reverse_each_word(string)
  string = string.split(' ')
  reversed_string = []
  
- string.collect do |word|
-  #reversed_string.unshift(word)
-  reversed_string << string.unshift(word)
+ string.collect do |i|
+  
+  reversed_string << string[i].unshift
  end
  
  return reversed_string.join(' ')
