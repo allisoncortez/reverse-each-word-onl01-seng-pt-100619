@@ -27,7 +27,8 @@ def reverse_each_word(string)
  reversed_string = []
  
  string.collect do |word|
-  reversed_string.unshift(word)
+  #reversed_string.unshift(word)
+  reversed_string << string.unshift(word)
  end
  
  return reversed_string.join(' ')
